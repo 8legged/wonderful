@@ -8,6 +8,9 @@
 </head>
 <body>
 
+<% flash.each do |type, msg| %>
+  <div class="field_with_errors"><%= msg %></div>
+  <% end %>
 <%= yield %>
 
 </body>
